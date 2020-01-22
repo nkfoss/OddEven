@@ -1,0 +1,9 @@
+<app-game-controller (intervalEmitter)="onGameStarted($event)"></app-game-controller>
+<div class="row">
+  <div class="col-sm">
+    <app-odd *ngFor="let oddCount of oddCounts"></app-odd>
+  </div>
+  <div class="col-sm">
+    <app-even *ngFor="let evenCount of evenCounts"></app-even>
+  </div>
+</div>
